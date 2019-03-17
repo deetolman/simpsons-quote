@@ -1,8 +1,10 @@
 import { getQuote } from '../services/simpsonsApi';
 
+export const FETCH_QUOTES_LOADING = 'FETCH_FACTS';
 export const FETCH_QUOTE = 'FETCH_QUOTE';
-export const fetchQuote = count => ({
+export const fetchQuote = () => ({
   type: FETCH_QUOTE,
-  payload: getQuote(count)
+  loadStart: FETCH_QUOTES_LOADING,
+  payload: getQuote(),
 });
 

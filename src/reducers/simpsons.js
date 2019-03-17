@@ -8,9 +8,11 @@ const initialState = {
 
 export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
-    case FETCH_QUOTE:
-      return { ...state, quote: payload.quote, characterName: payload.character, characterImage: payload.image };
+    case FETCH_QUOTE: {
+      return { ...state, quote: payload.quote, characterName: payload.characterName, characterImage: payload.characterImage };
+    }
     default:
       return state;
   }
 }
+
