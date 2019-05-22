@@ -10,7 +10,7 @@ function Quote({ quote, characterName, characterImage, fetch, loading }) {
         <div className={styles.Quote}>
           <h1>Simpsons Quote of the Day</h1>
           <p>{quote}</p>
-          <p>{characterName}</p>
+          <p className={styles.Name}>{characterName}</p>
           <img src={characterImage}/>
           <Load fetch={fetch}/>
         </div>}

@@ -4,7 +4,7 @@ const initialState = {
   quote: '',
   characterName: '',
   characterImage: '',
-  laoding: false
+  loading: false
 };
 
 export default function reducer(state = initialState, { type, payload }) {

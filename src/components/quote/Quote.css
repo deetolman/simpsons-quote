@@ -1,13 +1,36 @@
 .Quote {
   font-family: 'Cinzel';
-  background-color: yellow;
   text-align: center;
 }
 h1 {
   font-size: 2.2em;
   color: gray;
+  margin-bottom: 50px;
 }
 p {
-  font-size: 2em;
+  margin: 10px;
+  padding: 0 100px;
+  font-size: 1.8em;
   color: darkgray;
+}
+.Name {
+  color: black;
+  font-style: italic;
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+body {
+  background-color: yellow;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em; 
+  }
+  p {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  img {
+    width: 30%;
+  }
 }
